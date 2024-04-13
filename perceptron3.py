@@ -36,3 +36,8 @@ def treinar():
 
 
 treinar()
+print('rede neural treinada')
+print(calcula_saida(entradas[0]))
+print(calcula_saida(entradas[1]))
+print(calcula_saida(entradas[2]))
+print(calcula_saida(entradas[3]))
