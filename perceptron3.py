@@ -2,7 +2,9 @@ import numpy as np
 
 entradas = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
 
-saidas = np.array([0, 0, 0, 1])
+# saidas = np.array([0, 0, 0, 1])
+saidas = np.array([0, 1, 1, 1])  # or
+# saidas = np.array([0, 1, 1, 0])  # xor
 
 pesos = np.array([0.0, 0.0])
 
@@ -31,7 +33,7 @@ def treinar():
             for j in range(len(pesos)):
                 pesos[j] = pesos[j] + \
                     (taxa_de_aprendizagem * entradas[i][j] * erro)
-                print('peso atualizado' + str(pesos[j]))
+                print('peso atualizado ' + str(pesos[j]))
         print('total de erros: ' + str(errototal))
 
 
